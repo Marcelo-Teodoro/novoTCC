@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui" 
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+    <h:head>
+        <title>Porto Espote Clube</title>
+    </h:head>
+    <h:body>
+        <h:form>
+            <p:layout fullPage="true" style="min-width:150px;min-height:300px;margin-left: 100px;margin-right: 100px">
+
+                <ui:define name="menu">
+                    <ui:include src="menu.xhtml" />
+                </ui:define>
+                <ui:define name="center" />
+                <p:panel id="basic1" style="height: 520px; margin-left: 60px;margin-right: 60px; background-color: blanchedalmond">
+                    <p:galleria value="#{dashboardMB.images}" var="image" panelWidth="1170" panelHeight="450" showCaption="true">
+                        <p:graphicImage  value="imagens/porto.jpg" alt="Image Description for #{image}" title="#{image}" />
+                    </p:galleria>
+                </p:panel>
+
+
+
+            </p:layout>
+        </h:form>
+    </h:body>
+</html>
+
