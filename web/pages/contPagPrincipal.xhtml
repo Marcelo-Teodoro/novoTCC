@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:h="http://xmlns.jcp.org/jsf/html"
+                xmlns:p="http://primefaces.org/ui" 
+                xmlns:f="http://xmlns.jcp.org/jsf/core"
+                xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+
+    <h:form>
+        <div style="text-align: center">
+            
+            <p:galleria value="#{dashboardMB.images}" styleClass="vagabundo" var="image" showCaption="true" style="text-align: center !important;">
+                <p:graphicImage  value="imagens/porto.jpg" alt="Image Description for #{image}" title="#{image}" width="400px" height="400px"/>
+            </p:galleria>
+
+        </div>
+            <p:dataGrid columns="2" layout="grid" rows="2" value="#{dashboardMB.images}" var="image">
+                
+                <p:panel header="#{image}" style="border: #ffffff; width: 80% !important; margin-left: auto !important; margin-right: auto !important;">
+                    <h:panelGrid columns="1" style="margin-left: auto !important; margin-right: auto !important;" >
+
+                        <p:graphicImage value="imagens/porto.jpg" width="200px" height="200px"/> 
+
+                        <h:outputText value="#{image}" />
+
+                    </h:panelGrid>
+
+                    <h:outputText value="Aqui vai a noticia Aqui vai a noticia Aqui vai a noticia Aqui vai a noticia Aqui vai a noticia 
+                                  Aqui vai a noticia Aqui vai a noticia Aqui vai a noticia Aqui vai a noticia Aqui vai a noticia 
+                                  Aqui vai a noticia Aqui vai a noticia Aqui vai a noticia Aqui vai a noticia Aqui vai a noticia 
+                                  Aqui vai a noticia Aqui vai a noticia Aqui vai a noticia Aqui vai a noticia Aqui vai a noticia 
+                                  Aqui vai a noticia Aqui vai a noticia Aqui vai a noticia Aqui vai a noticia Aqui vai a noticia 
+                                  Aqui vai a noticia Aqui vai a noticia Aqui vai a noticia Aqui vai a noticia Aqui vai a noticia " />
+                </p:panel>
+
+            </p:dataGrid>
+        </h:form>
+</ui:composition>

@@ -16,7 +16,7 @@ public class DashboardMB implements Serializable {
     public void init() {
         images = new ArrayList<String>();
         for (int i = 1; i <= 4; i++) {
-            images.add(i + ".png    ");
+            images.add(i + ".JPG");
         }
     }
 

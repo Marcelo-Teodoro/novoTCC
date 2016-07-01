@@ -8,8 +8,16 @@
     overflow: visible !important;
 }
 
+.vagabundo{
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
 .test{
     width: max-content !important;
     margin-left: auto !important;
     margin-right: auto !important;
 }
+
+
+
